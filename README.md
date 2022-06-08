@@ -53,8 +53,8 @@ concept of recursion, and write simple recursive methods to manipulate arrays an
 |                       | **Percentage** |
 |-----------------------|----------------|
 | **Homework**          | 30%            |
-| **Labs**              | 20$            |
-| **Midterm Exams (2)** | 30$            |
+| **Labs**              | 20%            |
+| **Midterm Exams (2)** | 30%            |
 | **Final Exam**        | 20%            |
 
 - **Labs**: Labs are short programs assigned nearly every week. These may be done collaboratively with other students, 
@@ -71,22 +71,22 @@ least one week in advance. Do not miss a test unless a (documentable) emergency 
 
 ### _Course Weekly Schedule_
 
-| **Week**           | **Topic**                             | **Assignment**   |
-|--------------------|---------------------------------------|------------------|
-| **Week 1**         | Inheritance I                         |                  |
-| **Week 2**         | Inheritance II                        | Lab 1            |
-| **Week 3**         | Polymorphism I                        | Lab 2            |
-| **Week 4**         | Polymorphism II / GUI I and II        | Lab 3            |
-| **Week 5**         | Exam I                                |                  |
-| **Week 6**         | Exceptions                            | Lab 4            |
-| **Week 7**         | Recursion                             | Lab 5            |
-| **Week 8**         | Exception handling and GUI III        | Lab 6            |
-| **Week 9 and 10**  | Midterm and Midterm                   |                  |
-| **Week 10**        | Collections I and II                  | Lab 7            |
-| **Week 11**        | Collections III and Multi-threading I | Lab 8            |
-| **Week 12**        | Multi-threading II                    | Lab 9            |
-| **Week 13 and 14** | GUI IV - VII and Review               | Lab 10           |
-| **Week 15**        | Final exam                            |                  |
+| **Week**           | **Topic**                             | **Assignment**       |
+|--------------------|---------------------------------------|----------------------|
+| **Week 1**         | Inheritance I                         |                      |
+| **Week 2**         | Inheritance II                        | Lab 1, Assignment 1  |
+| **Week 3**         | Polymorphism I                        | Lab 2                |
+| **Week 4**         | Polymorphism II / GUI I and II        | Lab 3, Assignment 2  |
+| **Week 5**         | Exam I                                |                      |
+| **Week 6**         | Exceptions                            | Lab 4                |
+| **Week 7**         | Recursion                             | Lab 5, Assignment 3  |
+| **Week 8**         | Exception handling and GUI III        | Lab 6                |
+| **Week 9 and 10**  | Midterm and Midterm                   |                      |
+| **Week 10**        | Collections I and II                  | Lab 7                |
+| **Week 11**        | Collections III and Multi-threading I | Lab 8, Assignment 4  |
+| **Week 12**        | Multi-threading II                    | Lab 9                |
+| **Week 13 and 14** | GUI IV - VII and Review               | Lab 10, Assignment 5 |
+| **Week 15**        | Final exam                            |                      |
 
 #### _Repository Structure_
 
@@ -126,7 +126,7 @@ least one week in advance. Do not miss a test unless a (documentable) emergency 
 
 1. [**Inheritance**](src/inheritance)
 2. [**Abstract Classes**](src/overridingMethodsAndAbstract)
-
+3. [**Interfaces**](src/interfaces)
 
 ### _University Policies and Resources_
 
