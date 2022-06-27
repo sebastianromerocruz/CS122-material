@@ -127,10 +127,15 @@ least one week in advance. Do not miss a test unless a (documentable) emergency 
 1. [**Inheritance**](src/inheritance)
 2. [**Abstract Classes**](src/overridingMethodsAndAbstract)
 3. [**Interfaces**](src/interfaces)
+4. Polymorphism:
+   1. [**With Inheritance**](src/polymorphism/inheritance)
+   2. [**With Interfaces**](src/polymorphism/interfaces)
+   3. [**Applications in Sorting and Searching**](src/polymorphism/sortingAndSearching)
 
 ### _Homework Assignments_
 
 1. [**Inheritance, Abstract Classes, and Interfaces**](src/homeworkAssignments/assignment01)
+2. [**Polymorphism**](src/homeworkAssignments/assignment02)
 
 ### _University Policies and Resources_
 

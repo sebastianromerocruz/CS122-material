@@ -18,17 +18,9 @@ public class Coordinates implements Comparable<Coordinates> {
                 new Coordinates(Math.random(), Math.random()),
         };
 
-        for (Coordinates cooordinate: coordinates) {
-            System.out.println(cooordinate);
-        }
-
         System.out.println();
 
         Arrays.sort(coordinates);
-
-        for (Coordinates cooordinate: coordinates) {
-            System.out.println(cooordinate);
-        }
     }
 
     public Coordinates(double latitude, double longitude) {
