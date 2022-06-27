@@ -1,6 +1,6 @@
 # Homework 2
 
-#### Due Saturday, July 5th, at 11:59pm on [**Classes**](https://classes.pace.edu/d2l/lms/dropbox/admin/folders_manage.d2l?ou=349209) for 20 points.
+#### Due Tuesday, July 5th, at 11:59pm on [**Classes**](https://classes.pace.edu/) for 20 points.
 
 ### Motivation
 - Demonstrate your ability to apply [**polymorphism**](https://github.com/sebastianromerocruz/CS122-material/blob/4516a469f646378d515c9a20e61153804ecf1586/src/polymorphism/sortingAndSearching) in the Java programming language.
