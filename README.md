@@ -131,6 +131,8 @@ least one week in advance. Do not miss a test unless a (documentable) emergency 
    1. [**With Inheritance**](src/polymorphism/inheritance)
    2. [**With Interfaces**](src/polymorphism/interfaces)
    3. [**Applications in Sorting and Searching**](src/polymorphism/sortingAndSearching)
+5. [**JavaFX**](java-fx/src/main/java/com/cs122/javafx)
+   1. [**Groups, scenes, shapes, and colours**](java-fx/src/main/java/com/cs122/javafx/README.md#part-1-examples-from-lecture-1)
 
 ### _Homework Assignments_
 
