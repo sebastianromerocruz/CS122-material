@@ -6,7 +6,9 @@ public class SuperSmashBros implements CooperativelyDoable {
         CooperativelyDoable meeting = new UnitedNationsGeneralAssembly();
         CooperativelyDoable game = new SuperSmashBros();
 
-        ((SuperSmashBros) game).chooseStage("Final Destination");
+//        ((SuperSmashBros) game).chooseStage("Final Destination");
+
+        CooperativelyDoable[] thing = new CooperativelyDoable[] { new SuperSmashBros(), new UnitedNationsGeneralAssembly() };
     }
 
     public void chooseStage(String stageName) {
