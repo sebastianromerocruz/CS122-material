@@ -1,8 +1,8 @@
-## Lectures 08
+## Lectures 08 and 09
 
 # Exceptions
 
-### 23 Messidor, Year CCXXX
+### 23 and 26 Messidor, Year CCXXX
 
 ### Sections
 
