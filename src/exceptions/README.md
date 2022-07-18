@@ -12,7 +12,8 @@
    2. [**Handling Exceptions _In-Situ_**](#handling-exceptions-in-situ)
    3. [**Handling Exceptions at Another Place in the Program**](#handling-exceptions-at-another-place-in-the-program)
 3. [**The `Throwable` Class**](#part-3-the-throwable-class)
-4. [**Lab**](#lab)
+4. [**Lab 05**](#lab)
+5. [**I / O Exceptions**](#part-6-io-exceptions)
 
 ### Part 1: _Imperfect Code in an Imperfect World_
 
@@ -423,3 +424,112 @@ public class Lab {
 In the static method `getAverageLength()`, two kinds of built-in Java exceptions can happen (I'm not telling you which 
 two, but they're not particularly uncommon). Using `try`-`catch` blocks, make sure that the value of `-1` is always 
 returned in case either of those two exceptions happen.
+
+### Part 6: _I / O Exceptions_
+
+We talked about JavaFX being an extension to our current knowledge in the sense that it provides a visual output to our
+programming. Of course, these inputs and outputs don't always have to be visual, and oftentimes take the form of files
+that are created / edited. In order to do this with Java, we need to take advantage of something called a _stream_.
+
+> A **stream** is a sequence of bytes that flow from a source to a destination. In a program, we read information from 
+> an input stream and write information to an output stream. A program can manage multiple streams simultaneously.
+
+There are three standard I / O streams:
+- **Standard Output**, which is defined by `System.out`.
+- **Standard Input**, which is defined by `System.in`.
+- **Standard Error**, which is defined by `System.err`.
+
+We've naturally seen `System.out` a whole bunch. Both it and `System.err` typically represent the console window. 
+`System.in` on the other hand typically represents keyboard input, which we've used many times with `Scanner` objects.
+
+---
+
+It probably goes without saying that the user can input all sorts of garbage values into a program. This is not 
+necessarily done on purpose; users have to learn how to use a program, and the learning curve for any given program
+can vary from person to person. This being the case, it helps for us to to have a specific exception that deals with
+these unpredictable scenarios. The `IOException` class—a **checked** exception—deals with such operations performed by 
+some of Java's I / O classes.
+
+For example, it's helpful in situations when:
+
+- A file might not exist
+- A file exists, but the program is not able to find / open it
+- The file exists, can be found and opened, but does not contain the kind of data that we expect (e.g. tryng to open
+a Word file with Apple Music or Spotify)
+
+Let's illustrate this by writing some data onto a file using the `PrintWriter` class. In this case, this output stream
+must be closed explicitly—a good use for our `finally` clause:
+
+```java
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Random;
+
+public class TestData {
+    public static final int MAX = 10;
+    public static final String FILE_NAME = "test.txt";
+
+    public static void main(String[] args) throws IOException {
+        int value;
+
+        // Our output stream is no long System.out, but a PrintWriter object
+        PrintWriter outFile = new PrintWriter(FILE_NAME);
+
+        Random random = new Random();
+
+        for (int lineNumber = 1; lineNumber <= MAX; lineNumber++) {
+            for (int number = 1; number <= MAX; number++) {
+                value = random.nextInt(90) + MAX;
+                outFile.printf("%d\t", value); // The same methods—print(), printf(), println()—are available to us
+            }
+
+            outFile.print('\n');
+        }
+
+        outFile.close();
+        System.out.printf("Output file has been created: %s!\n", FILE_NAME);
+    }
+}
+```
+
+<sub>**Code Block 8**: Delegating the `IOException` to the caller of `main()`.</sub>
+
+Or, if you want to handle the exception _in-situ_:
+
+```java
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Random;
+
+public class TestData {
+    public static final int MAX = 10;
+    public static final String FILE_NAME = "test.txt";
+
+    public static void main(String[] args) {
+        int value;
+
+        try {
+            // Our output stream is no long System.out, but a PrintWriter object
+            PrintWriter outFile = new PrintWriter(FILE_NAME);
+
+            Random random = new Random();
+
+            for (int lineNumber = 1; lineNumber <= MAX; lineNumber++) {
+                for (int number = 1; number <= MAX; number++) {
+                    value = random.nextInt(90) + MAX;
+                    outFile.printf("%d\t", value); // The same methods—print(), printf(), println()—are available to us
+                }
+
+                outFile.print('\n');
+            }
+
+            outFile.close();
+            System.out.printf("Output file has been created: %s!\n", FILE_NAME);
+        } catch (IOException ioe) {
+            System.out.println("ERROR: Something went wrong.");
+        }
+    }
+}
+```
+
+<sub>**Code Block 9**: Catching the exception inside of `main()`.</sub>
