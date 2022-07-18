@@ -133,6 +133,7 @@ least one week in advance. Do not miss a test unless a (documentable) emergency 
    3. [**Applications in Sorting and Searching**](src/polymorphism/sortingAndSearching)
 5. [**JavaFX**](java-fx/src/main/java/com/cs122/javafx)
    1. [**Groups, scenes, shapes, and colours**](java-fx/src/main/java/com/cs122/javafx/README.md#part-1-examples-from-lecture-1)
+   2. [**Graphical User Interfaces (GUI)**](java-fx/src/main/java/com/cs122/javafx/README.md#part-2-graphical-user-interfaces-gui)
 6. [**Exceptions, `try`-`catch`, and `throws`**](src/exceptions)
 
 ### _Homework Assignments_
