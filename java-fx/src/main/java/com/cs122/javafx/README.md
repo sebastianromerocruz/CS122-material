@@ -7,6 +7,7 @@
 ### Sections
 
 1. [**Groups, scenes, shapes, and colours**](#part-1-examples-from-lecture-1)
+2. [**Graphical User Interfaces (GUI)**](#part-2-graphical-user-interfaces-gui)
 
 ### Part 1: _Groups, scenes, shapes, and colours_
 
@@ -42,3 +43,28 @@
    `Color purple = Color.rgb(183, 44, 150);`.
    7. The colormethod uses [**percentages**](https://www.december.com/html/spec/colorper.html): `Color maroon = 
    Color.color(0.6, 0.1, 0.0);`.
+
+### Part 2: _Graphical User Interfaces (GUI)_
+
+1. [**Push Counter**](PushCounter.java)
+   1. A call to the `setOnAction()` method sets up the relationship between the _button_ that generates the event and 
+   the _event handler_ that responds to it.
+   2. This example uses a method reference (using the `::` operator) to specify the event handler method.
+   3. The `this` reference indicates that the event handler method is in the same class.
+   4. The event handler method can be called whatever you want, but must accept an `ActionEvent` object as a parameter.
+   5. A flow pane is another layout pane, which displays its contents horizontally in rows or vertically in columns.
+      1. A gap of 20 pixels is established between elements on a row using the `setHGap()` method.
+   6. Instead of using a method reference, the event handler could be specified using a separate class that implements
+   [**the `EventHandler` interface**](ButtonHandler.java).
+      1. The event handler class could be defined as public in a separate file or as a private inner class in the same 
+      file.
+      2. The call to the `setOnAction()` method would specify a new event handler object e.g. `push.setOnAction(new 
+      ButtonHandler());`.
+      3. _Or_ you can use a lambda expression: `(event) -> {statements}`.
+   7. Lambda expressions can be used whenever an object of a functional interface (i.e. an interface that contains only 
+   methods) is required, and that interface contains a single method.
+   8. The `EventHandler` interface is a functional interface, and contains a single method `handle()`.
+2. [**Fahrenheit Pane**](FahrenheitPane.java) and [**Fahrenheit Converter**](FahrenheitConverter.java)
+   1. A text field allows the user to enter one line of input.
+   2. If the cursor is in the text field, the text field object generates an action event when the enter key is pressed.
+   3. `GridPaneis` a JavaFX layout pane that displays nodes in a rectangular grid.
