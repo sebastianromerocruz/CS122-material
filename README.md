@@ -135,6 +135,7 @@ least one week in advance. Do not miss a test unless a (documentable) emergency 
    1. [**Groups, scenes, shapes, and colours**](java-fx/src/main/java/com/cs122/javafx/README.md#part-1-examples-from-lecture-1)
    2. [**Graphical User Interfaces (GUI)**](java-fx/src/main/java/com/cs122/javafx/README.md#part-2-graphical-user-interfaces-gui)
 6. [**Exceptions, `try`-`catch`, and `throws`**](src/exceptions)
+7. [**Recursion**](src/recursion)
 
 ### _Homework Assignments_
 
