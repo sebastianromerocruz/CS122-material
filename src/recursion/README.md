@@ -224,19 +224,22 @@ In this definition, we need separate cases for the 0<sup>th</sup> and 1<sup>st</
 they don't have enough preceding numbers require to calculate a regular Fibonacci number. Let's visualise, say, `f(6)`:
 
 ```text
-f(6) = f(5) + f(4)                          =                             5 + 3 = 8
-         |                                                                ^
-         V                                                                |
-       f(5) = f(4) + f(3)                   =                     3 + 2 = 5
-                |                                                 ^
-                V                                                 |
-              f(3) = f(2) + f(1)            =             2 + 1 = 3
-                       |                                  ^
-                       V                                  |
-                     f(2) = f(1) + f(0)     =     1 + 1 = 2
-                              |      |            ^
-                              V      V            |
-                              1  +   0      =     1
+f(6) = f(5) + f(4)                              =                                  5 + 3 = 8
+         |                                                                         ^
+         V                                                                         |
+       f(5) = f(4) + f(3)                       =                          3 + 2 = 5
+                |                                                          ^
+                V                                                          |
+              f(4) = f(3) + f(2)                =                  2 + 1 = 3
+                       |                                           ^
+                       V                                           |
+                     f(3) = f(2) + f(1)         =          1 + 1 = 2
+                              |                            ^
+                              V                            |
+                            f(2) = f(1) + f(0)  =  1 + 0 = 1
+                                     |      |      ^
+                                     V      V      |
+                                     1  +   0   =  1
 ```
 
 <sub>**Figure 3**: The 6<sup>th</sup> Fibonacci number is 8.</sub>
@@ -294,32 +297,29 @@ getRecursiveSumOfArray(new int[] { 1, 2, 3, 4, 5 });
             |——> head: array[0] ——> 2
             |——> tail: getRecursiveSumOfArray(new int[] { 3, 4, 5 });
                     |
-                    |——> head: array[0] ——> 2
-                    |——> tail: getRecursiveSumOfArray(new int[] { 3, 4, 5 });
+                    |——> head: array[0] ——> 3
+                    |——> tail: getRecursiveSumOfArray(new int[] { 4, 5 });
                             |
-                            |——> head: array[0] ——> 3
-                            |——> tail: getRecursiveSumOfArray(new int[] { 4, 5 });
+                            |——> head: array[0] ——> 4
+                            |——> tail: getRecursiveSumOfArray(new int[] { 5 });
                                     |
-                                    |——> head: array[0] ——> 4
-                                    |——> tail: getRecursiveSumOfArray(new int[] { 5 });
+                                    |——> head: array[0] ——> 5
+                                    |——> tail: getRecursiveSumOfArray(new int[] { });
                                             |
-                                            |——> head: array[0] ——> 5
-                                            |——> tail: getRecursiveSumOfArray(new int[] { });
-                                                    |
-                                                    V 
-                                            5 + 0 = 5
+                                            V 
+                                        0 + 5 = 5
+                                                |
+                                                V
+                                            4 + 5 = 9
                                                     |
                                                     V
-                                                4 + 5 = 9
+                                                3 + 9 = 12
                                                         |
                                                         V
-                                                    3 + 9 = 12
-                                                            |
-                                                            V
-                                                        2 + 12 = 14
-                                                                 |
-                                                                 V
-                                                             1 + 14 = 15
+                                                    2 + 12 = 14
+                                                             |
+                                                             V
+                                                         1 + 14 = 15
 ```
 
 <sub>**Figure 4**: It's like magic, right? Recursion is one of those things that feels like it shouldn't work, then you
