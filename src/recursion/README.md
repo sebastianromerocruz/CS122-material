@@ -1,4 +1,4 @@
-## Lecture 11
+## Lectures 11 and 12
 
 # Recursion
 
@@ -9,6 +9,8 @@
 1. [**Recursive Thinking**](#part-1-recursive-thinking)
 2. [**Recursive Algorithms**](#part-2-recursive-algorithms)
 3. [**Making `getSumOfArray()` Recursive**](#part-3-making-getsumofarray-recursive)
+4. [**Lab 06**](#part-4-lab-06)
+5. [**Solving A Maze With Recursion**](#part-5-solving-a-maze-with-recursion)
 
 ### Part 1: _Recursive Thinking_
 
@@ -324,3 +326,161 @@ getRecursiveSumOfArray(new int[] { 1, 2, 3, 4, 5 });
 
 <sub>**Figure 4**: It's like magic, right? Recursion is one of those things that feels like it shouldn't work, then you
 watch it actually work, and you are never the same.</sub>
+
+### Part 4: _Lab 06_
+
+_Due Friday, July 29th, at 11:59pm on Classes_
+
+Similar to how we got the recursive sum of an array, define a static method `getRecursiveSumOfEvens()` that will, as the
+name suggests, calculate and return the sum of all the **even** integers of an array. This algorithm is very similar to
+calculating the regular sum of an array—in fact, its base case is exactly the same:
+
+> **Base Case**: If `array` is empty, the sum is 0.
+
+The difference is in the recursive step, where we now have two possibilities:
+
+> **Recursive Case**: If the value of `head` is even, then its sum is `head` + the sum of all the even integers of the 
+> **tail**; if the value of `head` is odd, then its sum is just the sum of all the even integers of the **tail**.
+
+Recall that you can determine whether an integer is even by doing `number % 2 == 0` (`true` —> even).
+
+### Part 5: _Solving A Maze With Recursion_
+
+As with most programming techniques, just because we _have_ the ability to use recursion to solve a problem, it doesn't
+mean that we _should_ use it all the time. For example, we generally wouldn't use recursion to get the sum of the 
+elements of an array—a `for`-loop is much easier to understand and is not any less effective.
+
+There are, however, some problems that truly lend themselves to recursive solutions. For example, consider the situation
+where we need to find a path through a maze. Below, a `1` represents a location that we can traverse, and a `0` 
+represents a wall:
+
+```text
+1 1 1 0 1 1 0 0 0 1 1 1 1
+1 0 1 1 1 0 1 1 1 1 0 0 1
+0 0 0 0 1 0 1 0 1 0 1 0 0
+1 1 1 0 1 1 1 0 1 0 1 1 1
+1 0 1 0 0 0 0 1 1 1 0 0 1
+1 0 1 1 1 1 1 1 0 1 1 1 1
+1 0 0 0 0 0 0 0 0 0 0 0 0
+1 1 1 1 1 1 1 1 1 1 1 1 1
+
+In other words, the following maze:
+
+S — +   + —       + — — +
+|   + — +   + — + + +   |
+        |   |   |   |    
++ — +   + — +   |   + — +
+|   |         + + +     |
+|   + — — — — +   + — — +
+| 
++ — — — — — — — — — — — G
+```
+
+<sub>**Figure 1**: A maze represented by a two-dimensional array of ones and zeros. Here, `S` represents the start 
+position of the maze, and `G` the destination.</sub>
+
+There _is_ an iterative solution to this problem, but it's a bit of a nightmare. We'd have to keep track of four 
+cardinal directions using `if`-statements, and follow each path until its very end before moving on to the next path.
+Recursion offers a much more elegant solution. So what are the base and recursive steps.
+
+> We can consider the ***base case*** either an **invalid move (hitting a wall), or the act of reaching the 
+> destination**.
+
+Let's see what we mean by this. Essentially, for every location we consider:
+
+1. Check if this location is within bounds of the maze.
+2. If so, then check if the path is traversable (i.e. == 1).
+   1. If the step is valid, then we should mark it as having been **checked** by turning the `1` into a different 
+   number. This will basically prevent us from checking it again because it will fail the isStepValid() test (which 
+   checks for `1`).
+   2. If we have, by any chance, reached our the goal, then we are done here.
+3. If either of the above conditions are false, then we cannot traverse that location.
+4. If this step is not valid, then we have either reached our destination or hit a wall. Either way, we are done.
+
+Code:
+
+```java
+// What is a valid move?
+public boolean isStepValid(int row, int column) {
+    
+    // Step 1: Check if this location is within bounds of the maze
+    if (row >= 0 && row < grid.length && column >= 0 && column < grid[row].length) {
+        
+        // Step 2: If so, then check if the path is traversable i.e. == 1.
+        //         This will return true if it is, and false if it is not.
+        return grid[row][column] == 1;
+    }
+
+    // Step 3: If the above conditions are false, then we cannot traverse that location anyway
+    //         So return false.
+    return false;
+}
+
+public boolean traverse (int row, int column) {
+        boolean isDone;
+
+        if (!isStepValid(row, column)) {
+
+            // Step 1: If this step is not valid, then we have either reached our destination
+            //         Or hit a wall. Either way, we are done here.
+            isDone = false;
+        } else {
+
+            // Step 2: If the step is valid, then we should mark it as having been checked,
+            //         since we are checking it right now. This will basically prevent us
+            //         from checking it again because it will fail the isStepValid() test.
+            grid[row][column] = CHECKED;
+    
+            if (row == GOAL_ROW && column == GOAL_COL) {
+    
+            // Step 3: First, we should check if we have reached the goal. If we have,
+            //         then we are done here.
+            isDone = true;
+            
+        ...
+```
+
+<sub>**Code Block 1**: Implementation of the base step. Notice that this only includes half of the `traverse()` 
+method.</sub>
+
+---
+
+> The ***recursive step*** would be to check each individual direction, and invoking the same traverse method from that
+> new position.
+
+In other words:
+
+1. We check the positions **above**, **below, to the **right** and to the **left** of our current location using the 
+`traverse()` method—as if that location were our new starting point.
+2. If either of these paths returned true, then we are on the right path. So, we mark it as part of this correct path
+by changing its value from the "_checked_" value we had earlier.
+3. Whether we are on the right path or not ,we signal the result to the step above us.
+
+```java
+        ...
+        
+        else {
+        
+        // Step 4: If we haven't, then that's where recursion takes over. We check
+        //         the positions above, below, to the right and to the left of our
+        //         current location using the traverse() method—as if that location
+        //         were our new starting point.
+        isDone = traverse(row + 1, column);               // check below
+        if (!isDone) isDone = traverse(row, column + 1);  // check right
+        if (!isDone) isDone = traverse(row - 1, column);  // check up
+        if (!isDone) isDone = traverse(row, column - 1);  // check left
+        }
+
+        // Step 5: If either of these paths returned true, then we are on the right path.
+        //         So, we mark it as part of the PATH.
+        if (isDone) grid[row][column] = PATH;
+    }
+
+    // Step 6: Whatever the case may be, whether we return true or false, we need to signal
+    //         the step above us whether we are done here or not.
+    return isDone;
+}
+```
+
+<sub>**Code Block 2**: Implementation of the recursive step i.e. the remaining half of the `traverse()` method. Notice
+that `traverse()` calls itself here, making it recursive.</sub>
