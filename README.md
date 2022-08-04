@@ -136,6 +136,7 @@ least one week in advance. Do not miss a test unless a (documentable) emergency 
    2. [**Graphical User Interfaces (GUI)**](java-fx/src/main/java/com/cs122/javafx/README.md#part-2-graphical-user-interfaces-gui)
 6. [**Exceptions, `try`-`catch`, and `throws`**](src/exceptions)
 7. [**Recursion**](src/recursion)
+8. [**Collections**](src/collections)
 
 ### _Homework Assignments_
 
