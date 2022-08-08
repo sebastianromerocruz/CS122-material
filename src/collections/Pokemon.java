@@ -6,6 +6,7 @@ public class Pokemon {
     private final int level;
 
     private Pokemon evolution;
+    private Pokemon nextInTeam;
 
     public static void printEvolutionaryChainRecursively(Pokemon first) {
         if (first == null) return;  // If the current pokemon is null, then we're done
@@ -44,6 +45,8 @@ public class Pokemon {
         this.evolution = newEvolution;
     }
 
+    public void setNextInTeam(Pokemon nextInTeam) { this.nextInTeam = nextInTeam; }
+
     public void printEvolutionaryChain() {
         Pokemon current = this; // Create a separate reference to the current object
 
@@ -69,5 +72,9 @@ public class Pokemon {
 
     public String[] getTypes() {
         return types;
+    }
+
+    public Pokemon getNextInTeam() {
+        return nextInTeam;
     }
 }
