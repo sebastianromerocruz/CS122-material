@@ -1,4 +1,4 @@
-package homeworkAssignments.assignment04;
+package homeworkAssignments.assignment04.solution;
 
 import homeworkAssignments.assignment04.Node;
 
@@ -47,37 +47,39 @@ public class Stack {
         this.size = 0;
     }
 
-
-    /**
-     * Implement addToStack().
-     *
-     * This method must take into account the possibility of the stack currently being empty, in which case the first
-     * Node to be added will have a `previous` value of `null`. Remember to:
-     *      1. Change the `top` pointer to the new top node.
-     *      2. Increase the `size` integer.
-     *
-     * @param value The value to be added on top of the stack as a node
-     */
     public void addToStack(int value) {
-        // TODO - Implement add to stack method
+        // Create the new node that will be added to the stack whether or not the stack is empty
+        Node newNode = new Node(value);
+
+        if (this.size == 0) {
+            // If it is empty, then simply make this new node the top node and increase the size
+            this.top = newNode;
+            this.size++;
+
+            return;
+        }
+
+        Node previousTop = this.top; // If it is not empty, make sure to keep a separate reference to the old node
+
+        this.top.setNext(newNode); // Set the old top's next reference to the new node
+        this.top = this.top.getNext(); // The new top node is the old top node's next reference
+        this.top.setPrevious(previousTop); // And the new top node's previous reference is the old top
+        this.size++; // Don't forget to do this!
     }
 
-
-    /**
-     * Implement removeFromStack(), which returns a Node object reference.
-     *
-     * This method must take into account the possibility of the stack currently being empty (i.e. `size` is `0` / `top`
-     * is `null`), in which case return `null`. Remember to:
-     *      1. Change the `top` pointer to the new top node.
-     *      2. Decrease the `size` integer.
-     *      3. Sever the ties of the old top node to the stack before returning it.
-     *
-     * @return A pointer to the node that was removed from the top of the stack
-     */
     public Node removeFromStack() {
-        // TODO - Implement remove from stack method
+        if (this.size == 0 || this.top == null) return null; // If it is empty, then just return null
 
-        return null;
+        Node previousTop = this.top; // If not empty, make sure to keep a separate reference to the node to be removed
+
+        this.top = this.top.getPrevious(); // The new top is now the old top's previous reference
+        this.top.setNext(null); // And its new next reference is null
+
+        // Sever the links of to the stack of the previous top
+        previousTop.setPrevious(null);
+        previousTop.setNext(null);
+
+        return previousTop; // And return
     }
 
     public void printStack() {
@@ -88,7 +90,7 @@ public class Stack {
         System.out.print("TOP | ");
 
         do {
-            System.out.print(current);
+            System.out.print(current.getValue());
             current = current.getPrevious();
 
             if (current != null) System.out.print(" <-> ");

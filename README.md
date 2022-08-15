@@ -137,6 +137,7 @@ least one week in advance. Do not miss a test unless a (documentable) emergency 
 6. [**Exceptions, `try`-`catch`, and `throws`**](src/exceptions)
 7. [**Recursion**](src/recursion)
 8. [**Collections**](src/collections)
+9. [**Multi-Threading**](src/multithreading)
 
 ### _Homework Assignments_
 

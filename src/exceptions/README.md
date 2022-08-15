@@ -233,7 +233,7 @@ public class ProductCodes {
 #### Handling Exceptions at Another Place in the Program
 
 Our exceptions don't necessarily have to be handled within the method where they occurred. This may be a bit of a
-confusing concept, but we've actually seen someething similar before. Let's say we have the following class:
+confusing concept, but we've actually seen something similar before. Let's say we have the following class:
 
 ```java
 public class StandardDeviation {
