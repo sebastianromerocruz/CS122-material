@@ -21,6 +21,8 @@
 
 ### Course Description
 
+<h5 align=center><em>Tuesday and Thursday, 10:05 am - 12:05 pm at 15 Beekman Street 15BK 804</em></h5>
+
 This is the advanced level Java programming class following the Python programming class CS121. 
 
 The course topics cover Java classes, data types, loop and conditional statements, Java packages, abstract classes, interfaces, inheritance, UML, polymorphism, exceptions, and recursion. Multi-threading and thread synchronization will be introduced too. 
@@ -30,7 +32,7 @@ Students will get hands-on experience on coding and problem-solving through home
 ### Required Materials
 
 - Java Software Development Kit (SDK)
-- [**Visual Studio Code**](https://code.visualstudio.com/) and, after the first midterm, [**Intellij IDEA**](https://www.jetbrains.com/idea/).
+- [**Visual Studio Code**](https://code.visualstudio.com/), or any other Java programming environment you feel comfortable using.
 - **Optional Reference**: Java Software Solutions, 9th edition (or 8th or 7th), Lewis and Loftus, Pearson 9th ed. ISBN 
 978-0-134-46202-8.
 
@@ -51,16 +53,16 @@ I like reading novels, listening and playing music, and watching slice-of-life a
 | **Week 1**  | Syllabus Review, VSCode Setup, Command Line | Lab 1                       |
 | **Week 2**  | Data and Expressions                        | Labs 2 % 3 / Assignment 1   |
 | **Week 3**  | Classes                                     | Labs 4 & 5                  |
-| **Week 4**  | Conditionals                                | Labs 6 & 7 / Assignment 2   |
-| **Week 5**  | Loops                                       | Labs 8 & 9                  |
-| **Week 6**  | Object-Oriented Design                      | Labs 10 & 11 / Assignment 3 |
+| **Week 4**  | Conditionals and Loops                      | Labs 6 & 7 / Assignment 2   |
+| **Week 5**  | Object-Oriented Design                      | Labs 8 & 9                  |
+| **Week 6**  | Arrays                                      | Labs 10 & 11 / Assignment 3 |
 | **Week 7**  | Review and Midterm 1                        | Lab 12 (Review)             |
-| **Week 8**  | Arrays                                      | Labs 13 & 14                |
-| **Week 9**  | Inheritance                                 | Labs 15 & 16                |
+| **Week 8**  | Inheritance                                 | Labs 13 & 14                |
+| **Week 9**  | Polymorphism                                | Labs 15 & 16                |
 | **Week 10** | _Spring Break (No Classes)_                 |                             |
-| **Week 11** | Polymorphism                                | Labs 17 & 18 / Assignment 4 |
-| **Week 12** | Exceptions                                  | Labs 19 & 20                |
-| **Week 13** | Recursion                                   | Labs 21 & 22 / Assignment 5 |
+| **Week 11** | Exceptions                                  | Labs 17 & 18 / Assignment 4 |
+| **Week 12** | Recursion                                   | Labs 19 & 20                |
+| **Week 13** | Review and Midterm 2                        | Assignment 5                |
 | **Week 14** | Passover and Study Day (No Classes)         |                             |
 | **Week 15** | Collections, Vectors, and Multi-Threading   | Labs 23 & 24                |
 | **Week 16** | Review and Final Exam                       |                             |
@@ -72,7 +74,7 @@ I like reading novels, listening and playing music, and watching slice-of-life a
 | **Homework**           | 20%            |
 | **Labs**               | 20%            |
 | **Lowest Exam Score**  | 15%            |
- | **Median Exam Score**  | 20%            |
+| **Median Exam Score**  | 20%            |
 | **Highest Exam Score** | 25%            |
 
 - **Labs**: Labs are short programs assigned on the second half of nearly every lecture. These may be done collaboratively with other students,
