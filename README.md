@@ -51,7 +51,7 @@ I like reading novels, listening and playing music, and watching slice-of-life a
 | **Week**    | **Topic**                                   | **Assignment**              |
 |-------------|---------------------------------------------|-----------------------------|
 | **Week 1**  | Syllabus Review, VSCode Setup, Command Line | Lab 1                       |
-| **Week 2**  | Data and Expressions                        | Labs 2 % 3 / Assignment 1   |
+| **Week 2**  | Data and Expressions                        | Labs 2 & 3 / Assignment 1   |
 | **Week 3**  | Classes                                     | Labs 4 & 5                  |
 | **Week 4**  | Conditionals and Loops                      | Labs 6 & 7 / Assignment 2   |
 | **Week 5**  | Object-Oriented Design                      | Labs 8 & 9                  |
