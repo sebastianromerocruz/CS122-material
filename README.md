@@ -48,6 +48,8 @@ I like reading novels, listening and playing music, and watching slice-of-life a
 
 ### Course Schedule
 
+Although I don't anticipate any major changes to this, the following is subject to some minor adjustments throughout the semester:
+
 | **Week**    | **Topic**                                   | **Assignment**              |
 |-------------|---------------------------------------------|-----------------------------|
 | **Week 1**  | Syllabus Review, VSCode Setup, Command Line | Lab 1                       |
