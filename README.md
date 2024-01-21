@@ -99,7 +99,7 @@ We will be following the same grading scale as last semester:
 
 ### Lectures
 
-1. [**VSCode Setup**](src/01-vs-code-setup)
+1. [**Introduction**](src/01-intro/)
 
 <!-- 1. [**Inheritance**](src/inheritance)
 2. [**Abstract Classes**](src/overridingMethodsAndAbstract)
