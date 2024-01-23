@@ -1,6 +1,6 @@
 <h2 align=center>Week 01: <em>Day 1</em></h2>
 
-<h1 align=center>Syllabus Review and VSCode Setup</h1>
+<h1 align=center>Introductions and Syllabus Review</h1>
 
 <p align=center><strong><em>Song of the day</strong>: <a href="https://youtu.be/-UWpbEsj2yA?si=BaUfmDJXznXrC3J7"><strong><u>Sunkissed</u></strong></a> by The Vaccines (2024)</em></p>
 
