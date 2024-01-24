@@ -1,6 +1,6 @@
 <h1 align=center>CS 122: <em>Computer Programming II</em></h1>
 
-<h2 align=center>Pace University Seidenberg School of Computer Science & Informaton Systems</h2>
+<h2 align=center>Pace University Seidenberg School of Computer Science & Information Systems</h2>
 
 <h3 align=center>Spring 2024</h3>
 
@@ -100,21 +100,7 @@ We will be following the same grading scale as last semester:
 ### Lectures
 
 1. [**Introduction**](src/01-intro/)
-
-<!-- 1. [**Inheritance**](src/inheritance)
-2. [**Abstract Classes**](src/overridingMethodsAndAbstract)
-3. [**Interfaces**](src/interfaces)
-4. Polymorphism:
-   1. [**With Inheritance**](src/polymorphism/inheritance)
-   2. [**With Interfaces**](src/polymorphism/interfaces)
-   3. [**Applications in Sorting and Searching**](src/polymorphism/sortingAndSearching)
-5. [**JavaFX**](java-fx/src/main/java/com/cs122/javafx)
-   1. [**Groups, scenes, shapes, and colours**](java-fx/src/main/java/com/cs122/javafx/README.md#part-1-examples-from-lecture-1)
-   2. [**Graphical User Interfaces (GUI)**](java-fx/src/main/java/com/cs122/javafx/README.md#part-2-graphical-user-interfaces-gui)
-6. [**Exceptions, `try`-`catch`, and `throws`**](src/exceptions)
-7. [**Recursion**](src/recursion)
-8. [**Collections**](src/collections)
-9. [**Multi-Threading**](src/multithreading) -->
+2. [**Hello, JDK: _The Terminal / Command Line and The Java Compiler_**](src/02-setup-command-line/)
 
 ### Academic Integrity Code
 
