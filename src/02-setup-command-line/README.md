@@ -19,8 +19,6 @@ Before we get into the Java environment, let's just actually _write_ a quick pro
 single Java program must exist within the confines of a **class definition**. By convention, we write class names using capitalised camel-case (i.e. `LikeThis` and not `Like_This`):
 
 ```java
-package helloWorld;  // For now, consider this the name of our current folder
-
 class HelloWorld {
     // Our actual functionality will go here...
 }
