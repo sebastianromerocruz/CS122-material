@@ -15,8 +15,7 @@
 
 ### Part 1: _Our First Java Program_
 
-Before we get into the Java environment, let's just actually _write_ a quick program in Java for better context. Every
-single Java program must exist within the confines of a **class definition**. By convention, we write class names using capitalised camel-case (i.e. `LikeThis` and not `Like_This`):
+Before we get into the Java environment, let's just actually _write_ a quick program in Java for better context. Every single Java program must exist within the confines of a **class definition**. By convention, we write class names using capitalised camel-case (i.e. `LikeThis` and not `Like_This`):
 
 ```java
 class HelloWorld {
@@ -27,8 +26,7 @@ class HelloWorld {
 <sub>**Code Block 1**: The "skeleton" of a Java class. If you attempt to write code outside a Java class, the Java 
 compiler will not let you run it (in fact, will not even bother trying to compile it).</sub>
 
-Alright, so how to we tell Java to run things? If you want a Java class to execute something when it is compiled and 
-ran, you need what is called a driver, or a **main**, function (similar to what is done with the `main()` function in Python, but in Java's case, it is actually necessary). Java's version of the `main()` is infamously verbose and difficult to remember if you don't know what each individual part of it does, but we'll learn what each of these things mean in due time:
+Alright, so how to we tell Java to run things? If you want a Java class to execute something when it is compiled and ran, you need what is called a driver, or a **main**, function (similar to what is done with the `main()` function in Python, but in Java's case, it is actually necessary). Java's version of the `main()` is infamously verbose and difficult to remember if you don't know what each individual part of it does, but we'll learn what each of these things mean in due time:
 
 ```java
 class HelloWorld {
@@ -56,8 +54,7 @@ class HelloWorld {
 
 ### Part 2: _Compiling a Java file_
 
-Cool, so how to we run this? Java, unlike Python, is a _compiled_ language, meaning that we first need to break down our source code into 
-something called "bytecode". This, essentially, is our code deconstructed in such a way that the _Java Virtual Machine_ (JVM) can interpret and tell your computer to run. The way we do this in our command line / Terminal is as follows:
+Cool, so how to we run this? Java, unlike Python, is a _compiled_ language, meaning that we first need to break down our source code into something called "bytecode". This, essentially, is our code deconstructed in such a way that the _Java Virtual Machine_ (JVM) can interpret and tell your computer to run. The way we do this in our command line / Terminal is as follows:
 
 ![compiling](assets/compiling.png)
 
@@ -68,33 +65,27 @@ In order, my terminal is doing the following:
 
 1. Listing (`ls`) the files inside my Desktop folder.
 2. **Compiling** our `HelloWorld.java` file by using the `javac` command.
-3. Listing the files inside my Desktop folder once more. Notice that, post-compiling, there is a new file called 
-`HelloWorld.class`. This is the file containing the aforementioned bytecode.
+3. Listing the files inside my Desktop folder once more. Notice that, post-compiling, there is a new file called `HelloWorld.class`. This is the file containing the aforementioned bytecode.
 
 If we use the Terminal command `cat`, we can get a quick glimpse of the contents of this file:
 
 ![cat](assets/cat.png)
 
-<sub>**Figure 2**: The Terminal showing us the contents of `HelloWorld.class`. It's contents, intended for your computer
-to interpret, are thus very difficult for _us_ to understand.</sub>
+<sub>**Figure 2**: The Terminal showing us the contents of `HelloWorld.class`. It's contents, intended for your computer to interpret, are thus very difficult for _us_ to understand.</sub>
 
 ### Part 3: _Running a Java file_
 
-Just compiling a Java file is not enough to actually run it—that's actually what our `.class` file is for. In order to
-run it, we use the `java` command:
+Just compiling a Java file is not enough to actually run it—that's actually what our `.class` file is for. In order to run it, we use the `java` command:
 
 ![running](assets/running.png)
 
-<sub>**Figure 3**: Running our `HelloWorld` program. Note that, when using the `java` command, we don't include the
-`.class` extension.</sub>
+<sub>**Figure 3**: Running our `HelloWorld` program. Note that, when using the `java` command, we don't include the `.class` extension.</sub>
 
 There it is! Our Java file's output: a nice "Hello, World!". Congrats; you're a programmer now.
 
 ### Part 4: _Demystifying Java_
 
-Java is sometimes (and infamously) referred to as a verbose language. This is a diplomatic way of saying that, until a
-certain point, nobody has any idea of what half of what they are writing means (especially if they have never 
-programmed before). Let's take our `HelloWorld` program from earlier and use the following table to make sense of it:
+Java is sometimes (and infamously) referred to as a verbose language. This is a diplomatic way of saying that, until a certain point, nobody has any idea of what half of what they are writing means (especially if they have never programmed before). Let's take our `HelloWorld` program from earlier and use the following table to make sense of it:
 
 | **Character** | **Name**                            | **Description**                                              |
 |---------------|-------------------------------------|--------------------------------------------------------------|
@@ -131,6 +122,6 @@ Could be read in English as:
 
 ---
 
-And so on and so forth. Not knowing how to "read" lines of code is not super important in the beginning (I much prefer
-that you actually _write_ some code), but knowing the correct terminology certainly helps when listening to me talk, so
-please don't hesitate in asking if you don't recognise any words!
+And so on and so forth. Not knowing how to "read" lines of code is not super important in the beginning (I much prefer that you actually _write_ some code), but knowing the correct terminology certainly helps when listening to me talk, so please don't hesitate in asking if you don't recognise any words!
+
+<sub>**Previous: [Introductions and Syllabus Review](/src/01-intro)** || **Next: [Variables and Constants](/src/03-variables-constants)**</sub>
