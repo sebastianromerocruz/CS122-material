@@ -54,8 +54,8 @@ Although I don't anticipate any major changes to this, the following is subject 
 |-------------|---------------------------------------------|-----------------------------|
 | **Week 1**  | Syllabus Review, VSCode Setup, Command Line | Lab 1                       |
 | **Week 2**  | Data and Expressions                        | Labs 2 & 3 / Assignment 1   |
-| **Week 3**  | Classes                                     | Labs 4 & 5                  |
-| **Week 4**  | Conditionals and Loops                      | Labs 6 & 7 / Assignment 2   |
+| **Week 3**  | Conditionals and Loops                      | Labs 4 & 5                  |
+| **Week 4**  | Classes                                     | Labs 6 & 7 / Assignment 2   |
 | **Week 5**  | Object-Oriented Design                      | Labs 8 & 9                  |
 | **Week 6**  | Arrays                                      | Labs 10 & 11 / Assignment 3 |
 | **Week 7**  | Review and Midterm 1                        | Lab 12 (Review)             |
@@ -102,6 +102,7 @@ We will be following the same grading scale as last semester:
 1. [**Introduction**](src/01-intro/)
 2. [**Hello, JDK: _The Terminal / Command Line and The Java Compiler_**](src/02-setup-command-line/)
 3. [**Variables and Constants**](src/03-variables-constants/)
+3. [**Arithmetic Operators and User Input**](src/04-expressions/)
 
 ### Academic Integrity Code
 

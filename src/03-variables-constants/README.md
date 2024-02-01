@@ -343,4 +343,4 @@ class EarthVolumePrinter {
 
 <sub>**Code Block 10**: I love well-formatted Java classes.</sub>
 
-<sub>**Previous: [Hello, JDK](/src/02-setup-command-line)** || **Next: [Operators and Expressions]()**</sub>
+<sub>**Previous: [Hello, JDK](/src/02-setup-command-line)** || **Next: [Operators and User Input](/src/04-expressions)**</sub>
