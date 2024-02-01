@@ -2,7 +2,7 @@
 
 <h1 align=center>Arithmetic Operators and User Input</h1>
 
-<p align=center><strong><em>Song of the day</strong>: <a href="https://youtu.be/4t0xeWFCHho?si=UT042DG2My_mLj86"><strong><u>In The End It Always Does</u></strong></a> by The Japanese House (2023)</em></p>
+<p align=center><strong><em>Song of the day</strong>: <a href="https://youtu.be/h9JZWhjQDvc?si=98SqNUFzk_IRFWov"><strong><u>She's Electric</u></strong></a> by Oasis (1995)</em></p>
 
 ### Sections
 
