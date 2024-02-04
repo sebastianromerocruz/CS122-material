@@ -102,7 +102,8 @@ We will be following the same grading scale as last semester:
 1. [**Introduction**](src/01-intro/)
 2. [**Hello, JDK: _The Terminal / Command Line and The Java Compiler_**](src/02-setup-command-line/)
 3. [**Variables and Constants**](src/03-variables-constants/)
-3. [**Arithmetic Operators and User Input**](src/04-expressions/)
+4. [**Arithmetic Operators and User Input**](src/04-expressions/)
+5. [**Selections**](src/05-selections/)
 
 ### Academic Integrity Code
 
