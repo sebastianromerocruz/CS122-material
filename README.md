@@ -104,6 +104,7 @@ We will be following the same grading scale as last semester:
 3. [**Variables and Constants**](src/03-variables-constants/)
 4. [**Arithmetic Operators and User Input**](src/04-expressions/)
 5. [**Selections**](src/05-selections/)
+6. [**Loops**](src/06-loops/)
 
 ### Academic Integrity Code
 
