@@ -1,4 +1,4 @@
-<h2 align=center>Week 03: <em>Day 1</em></h2>
+<h2 align=center>Week 03: <em>Day 2</em></h2>
 
 <h1 align=center><code>switch</code> and Loops</h1>
 
