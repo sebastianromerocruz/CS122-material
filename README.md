@@ -106,6 +106,7 @@ We will be following the same grading scale as last semester:
 5. [**Selections**](src/05-selections/)
 6. [**Loops**](src/06-loops/)
 7. [**Static Methods**](src/07-static-methods/)
+7. [**Return Types**](src/08-return/)
 
 ### Academic Integrity Code
 
