@@ -28,7 +28,7 @@ Back in our Python days, we were able to store various values inside a single ob
 The basic syntax for declaring an array is as follows:
 
 ```java
-type[] ;
+type[] arrayReferenceVariable;
 
 // or...
 
@@ -128,7 +128,9 @@ int length = scanner.nextInt();
 
 double[] numbers = new double[length];
 
-for (int idx = 0; idx < length; idx++) numbers[idx] = scanner.nextDouble();
+for (int idx = 0; idx < length; idx++) {
+    numbers[idx] = scanner.nextDouble()
+};
 
 scanner.close();
 ```
@@ -145,8 +147,13 @@ scanner.close();
 double[] numbers = new double[length];
 
 // random numbers from 0.0 to 100.0
-for (int idx = 0; idx < length; idx++) numbers[idx] = Math.random() * 100.0;
-for (int idx = 0; idx < length; idx++) System.out.println(numbers[idx]);
+for (int idx = 0; idx < length; idx++) {
+    numbers[idx] = Math.random() * 100.0;
+}
+
+for (int idx = 0; idx < length; idx++) {
+    System.out.println(numbers[idx]);
+}
 ```
 
 Output:
@@ -172,10 +179,16 @@ int length = scanner.nextInt();
 scanner.close();
 
 double[] numbers = new double[length];
-for (int idx = 0; idx < length; idx++) numbers[idx] = Math.random() * 100.0;
+for (int idx = 0; idx < length; idx++) {
+    numbers[idx] = Math.random() * 100.0;
+}
 
 double max = Double.MIN_VALUE;
-for (int idx = 0; idx < length; idx++) if (numbers[idx] > max) max = numbers[idx];
+for (int idx = 0; idx < length; idx++) {
+    if (numbers[idx] > max) {
+        max = numbers[idx];
+    }
+}
 
 System.out.println("The max number generated was: " + max);
 ```
@@ -240,13 +253,18 @@ for (String member : members) {
 }
 ```
 
-Remember here, though, that the loop variable that the `foreach`-loop creates is simply a _copy_ of each of the values inside of the array. For instance:
+Remember here, though, that the loop variable that the `foreach`-loop creates is simply a _copy_ of each of the values inside of the array. It is _not_ referencing the actual member strings inside of `members`. For instance:
 
 ```java
 String[] members = { "Hitori", "Ikuyo", "Ryō", "Nijika" };
 
-for (String member : members) member = member.toUpperCase();
-for (String member : members) System.out.println(member);
+for (String member : members) {
+    member = member.toUpperCase();
+}
+
+for (String member : members) {
+    System.out.println(member);
+}
 ```
 
 Output:
