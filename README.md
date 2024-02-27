@@ -109,6 +109,7 @@ We will be following the same grading scale as last semester:
 8. [**Return Types**](src/08-return/)
 9. [**Arrays: Basics**](src/09-arrays-1/)
 9. [**Arrays: Memory, 2D Arrays, and Binary Search**](src/10-arrays-2/)
+10. [**Object-Oriented Design I**](src/11-class-design/)
 
 ### Academic Integrity Code
 
