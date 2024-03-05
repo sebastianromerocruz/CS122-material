@@ -1,6 +1,6 @@
-<h2 align=center>Week 06: <em>Day 1</em></h2>
+<h2 align=center>Week 06</h2>
 
-<h1 align=center>Arrays: <em>Object-Oriented Design I</em></h1>
+<h1 align=center>Object-Oriented Design</h1>
 
 <p align=center><strong><em>Song of the day</strong>: <a href="https://youtu.be/nGCd8cNFLd0?si=BZo6tzFSBTY4tes7"><strong><u>When Winter Comes Around</u></strong></a> by The Lemon Twigs (2023).</em></p>
 
