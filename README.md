@@ -4,6 +4,8 @@
 
 <h3 align=center>Spring 2024</h3>
 
+---
+
 ### Sections
 
 1. [**Course Description**](#course-description)
@@ -11,13 +13,15 @@
 3. [**Instructor**](#instructor)
 4. [**Course Schedule**](#course-schedule)
 5. [**Final Grade Breakdown**](#final-grade-breakdown)
-6. [**Lectures**](#lectures)
+6. [**Lecture Notes**](#lecture-notes)
 7. [**University Resources and Policies**](#university-resources-and-policies)
     - [**Procedure for Students Who Wish to Obtain Reasonable Accommodations for a Course**](#procedure-for-students-who-wish-to-obtain-reasonable-accommodations-for-a-course)
     - [**Technological Resources**](#technological-resources)
     - [**Appropriate Use Policy for Information Technology**](#appropriate-use-policy-for-information-technology)
     - [**Sex-Based Misconduct Policy and Procedure**](#sex-based-misconduct-policy-and-procedure)
     - [**Self-Care**](#self-care)
+
+---
 
 ### Course Description
 
@@ -29,12 +33,15 @@ The course topics cover Java classes, data types, loop and conditional statement
 
 Students will get hands-on experience on coding and problem-solving through homework assignments, labs, and exams.
 
+<br>
+
 ### Required Materials
 
 - Java Software Development Kit (SDK)
 - [**Visual Studio Code**](https://code.visualstudio.com/), or any other Java programming environment you feel comfortable using.
-- **Optional Reference**: Java Software Solutions, 9th edition (or 8th or 7th), Lewis and Loftus, Pearson 9th ed. ISBN 
-978-0-134-46202-8.
+- **Optional Reference**: Java Software Solutions, 9th edition (or 8th or 7th), Lewis and Loftus, Pearson 9th ed. ISBN 978-0-134-46202-8.
+
+<br>
 
 ### Instructor
 
@@ -45,6 +52,8 @@ I like reading novels, listening and playing music, and watching slice-of-life a
 | **E-Mail**                                                | **Office Hours**                                    |
 |-----------------------------------------------------------|-----------------------------------------------------|
 | [**sromerocruz@pace.edu**](mailto:sromerocruz@pace.edu)   | [**calendly**](https://calendly.com/profromerocruz) |
+
+<br>
 
 ### Course Schedule
 
@@ -68,6 +77,8 @@ Although I don't anticipate any major changes to this, the following is subject 
 | **Week 14** | Passover and Study Day (No Classes)         |                             |
 | **Week 15** | Collections, Vectors, and Multi-Threading   | Labs 23 & 24                |
 | **Week 16** | Review and Final Exam                       |                             |
+
+<br>
 
 ### Final Grade Breakdown
 
@@ -97,7 +108,11 @@ We will be following the same grading scale as last semester:
 |------------------|--------|--------|--------|-------|--------|--------|-------|--------|--------|-------|-------|
 | **Range**        | 93-100 | 90-93  | 87-90  | 83-87 | 80-83  | 77-80  | 70-77 | 67-70  | 63-67  | 60-63 | 0-60  |
 
-### Lectures
+<br>
+
+### Lecture Notes
+
+#### **Introduction To Java**
 
 1. [**Introduction**](src/01-intro/)
 2. [**Hello, JDK: _The Terminal / Command Line and The Java Compiler_**](src/02-setup-command-line/)
@@ -112,9 +127,17 @@ We will be following the same grading scale as last semester:
 10. [**Object-Oriented Design**](src/11-class-design/)
 11. [**Midterm I Review**](src/12-midterm-1-review/)
 
+#### **Object-Oriented Programming**
+
+12. [**Inheritance**](src/12-midterm-1-review/)
+
+<br>
+
 ### Academic Integrity Code
 
 Students in this course are required to adhere to Pace University's Academic Integrity Code. The Academic Integrity Code supports honesty and ethical conduct in the educational process. It educates students about what constitutes academic misconduct, helps to deter cheating and plagiarism, and provides a procedure for handling cases of academic misconduct. Students are expected to be familiar with the Code, which can be found under "University Policies" in the [**Student Handbook**](https://www.pace.edu/student-handbook).
+
+<br>
 
 ### University Resources and Policies
 
