@@ -129,7 +129,7 @@ We will be following the same grading scale as last semester:
 
 #### **Object-Oriented Programming**
 
-12. [**Inheritance**](src/12-midterm-1-review/)
+12. [**Inheritance**](src/13-inheritance/)
 
 <br>
 
