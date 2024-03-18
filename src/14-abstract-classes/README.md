@@ -1,6 +1,6 @@
 <h2 align=center>Week 09: <em>Day 1</em></h2>
 
-<h1 align=center>Method Overriding and Abstract Methods</h1>
+<h1 align=center>Method Overriding and Abstract Classes</h1>
 
 <p align=center><strong><em>Song of the day</strong>: <a href="https://youtu.be/krxU5Y9lCS8?si=6OIopQ6cc6wTyeeN"><strong><u>You Can't Always Get What You Want</u></strong></a> by The Rolling Stones (1969)</em></p>
 
