@@ -123,13 +123,14 @@ We will be following the same grading scale as last semester:
 7. [**Static Methods**](src/07-static-methods/)
 8. [**Return Types**](src/08-return/)
 9. [**Arrays: Basics**](src/09-arrays-1/)
-9. [**Arrays: Memory, 2D Arrays, and Binary Search**](src/10-arrays-2/)
-10. [**Object-Oriented Design**](src/11-class-design/)
-11. [**Midterm I Review**](src/12-midterm-1-review/)
+10. [**Arrays: Memory, 2D Arrays, and Binary Search**](src/10-arrays-2/)
+11. [**Object-Oriented Design**](src/11-class-design/)
+12. [**Midterm I Review**](src/12-midterm-1-review/)
 
 #### **Object-Oriented Programming**
 
-12. [**Inheritance**](src/13-inheritance/)
+13. [**Inheritance**](src/13-inheritance/)
+14. [**Method Overriding and Abstract Methods**](src/14-abstract-classes/)
 
 <br>
 
