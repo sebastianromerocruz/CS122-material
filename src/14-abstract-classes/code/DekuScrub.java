@@ -1,7 +1,7 @@
 public class DekuScrub extends Enemy {
-    private boolean isHidden;
-
     private static final int DEKU_NUT_INDEX = 0;
+
+    private boolean isHidden;
 
     public DekuScrub(boolean isHidden) {
         super("Deku Scrub", 100, "Deku Seeds", 20);

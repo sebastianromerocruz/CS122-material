@@ -1,8 +1,8 @@
 public abstract class Enemy {
     private final String name;
-    private final int healthPoints;
     private final String weaponName;
     private final int attackPower;
+    private int healthPoints;
 
     public static final String[] ITEMS = {
             "Deku Stick",

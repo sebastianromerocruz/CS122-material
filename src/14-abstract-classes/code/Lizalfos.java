@@ -1,5 +1,5 @@
 public class Lizalfos extends Enemy {
-    private final int numberOfLives;
+    private int numberOfLives;
 
 
     public Lizalfos(int numberOfLives) {
