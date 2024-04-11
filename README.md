@@ -135,6 +135,7 @@ We will be following the same grading scale as last semester:
 16. [**Polymorphism: _Inheritance_**](src/16-polymorphism-inheritance/)
 16. [**Polymorphism: _Interfaces_**](src/17-polymorphism-interfaces/)
 17. [**Exceptions: _`try`-`except` Blocks_**](src/18-exceptions-try-catch/)
+17. [**Exceptions: _The `Throwable` Class_**](src/19-exceptions-throwable/)
 
 <br>
 
