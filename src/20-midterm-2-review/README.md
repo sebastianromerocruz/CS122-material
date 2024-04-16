@@ -218,7 +218,7 @@ The actual cause of 20% of my daily stress will be thus represented by the `Subw
         RIDER_AMOUNT people/person tried to get on the LINE train...
         ```
         Where `RIDER_AMOUNT` and `LINE` should be replaced by their appropriate values.
-    4. Check if the current occupancy is greater than or equal to the max occupancy. If it is set the value of `currentOccupancy` to the value of the max occupancy and print the following message:
+    4. Check if the current occupancy is greater than or equal to the max occupancy. If it is, set the value of `currentOccupancy` to the value of the max occupancy and print the following message:
         ```
         ...but the LINE train is full!
         ```
