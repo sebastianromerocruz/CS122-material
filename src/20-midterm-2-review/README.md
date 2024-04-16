@@ -79,7 +79,7 @@
 5. For what reason do we set an abstract class's constructor to `protected`?
 
     - [ ] Because not doing so will result in a compiler error.
-    - [ ] Because it's conversion to do so, but there are no real practical reasons.
+    - [ ] Because it's convention to do so, but there are no real practical reasons.
     - [ ] Because not doing so will allow all files in the same folder as this abstract class to be able to call the constructor.
     - [ ] Because that way, we can guarantee that files outside of the package (folder) cannot access this constructor, but its subclasses can.
 
