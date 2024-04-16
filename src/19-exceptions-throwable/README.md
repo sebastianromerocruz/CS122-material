@@ -134,8 +134,7 @@ from a null array nor from an empty one.
 3. In order to actually raise this exception, we must use the `throw` keyword followed by an object of that exception
 class.
 
-This is what is called a **checked** exception, i.e. an exception that must be explicitly checked for in order for it
-to be thrown. Some built-in Java exceptions, such as `ArithmeticExcpetion` objects, are **unchecked**, since they are
+This is what is called a **checked** exception, i.e. an exception that must be explicitly checked for in order for it to be thrown. Some built-in Java exceptions, such as `ArithmeticExcpetion` objects, are **unchecked**, since they are
 raised regardless of whether we check them or not.
 
 Checked exceptions include:
