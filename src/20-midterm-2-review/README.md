@@ -20,7 +20,7 @@
 
 1. Which of the following is _not_ true about Java interfaces?
 
-    - [ ] Java interfaces have to use the `public` access modifyer.
+    - [ ] Java interfaces have to use the `public` access modifier.
     - [ ] Java interfaces can declare multiple methods.
     - [ ] Java classes can implement only one Java interface.
     - [ ] All of these are true statements.
@@ -79,7 +79,7 @@
 5. For what reason do we set an abstract class's constructor to `protected`?
 
     - [ ] Because not doing so will result in a compiler error.
-    - [ ] Because it's convertion to do so, but there are no real practical reasons.
+    - [ ] Because it's conversion to do so, but there are no real practical reasons.
     - [ ] Because not doing so will allow all files in the same folder as this abstract class to be able to call the constructor.
     - [ ] Because that way, we can guarantee that files outside of the package (folder) cannot access this constructor, but its subclasses can.
 
@@ -152,7 +152,7 @@ public class C extends A implements B {
 
 We'll be testing our understanding of object-oriented programming concepts by creating objects that simulate a city's public underground trains (I've based this on the NYC subway because it's just another excused to make fun of it). 
 
-Subway trains are themselves trains, but there are certainly other types of trains that we could think of: bullet trains, freight trains, overground trains, etc.. To accomodate for this variety, we will also be creating a general class to represent every kind of train, from which the Subway will get some of its properties from.
+Subway trains are themselves trains, but there are certainly other types of trains that we could think of: bullet trains, freight trains, overground trains, etc.. To accommodate for this variety, we will also be creating a general class to represent every kind of train, from which the Subway will get some of its properties from.
 
 <br>
 
