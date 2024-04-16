@@ -198,7 +198,7 @@ Because the `Train` class is abstract, we unfortunately can't test it, so let's 
 The actual cause of 20% of my daily stress will be thus represented by the `Subway` class, which will:
 
 - Inherit from the `Train` class.
-- Be _comparable_ to other `Train` objects.
+- Be _comparable_ to other `Subway` objects.
 - Have two _public static_ constants:
     - **`int MAX_OCCUPANCY`**: The max amount of people that can be riding this train at any given moment. For simplicity, let's use `100` as its value.
     - **`String MANUFACTURER`**: The manufacturer of _all NYC Subway trains_, `"New York City Subway Rolling Stock"`.
