@@ -138,6 +138,10 @@ We will be following the same grading scale as last semester:
 17. [**Exceptions: _The `Throwable` Class_**](src/19-exceptions-throwable/)
 18. [**Midterm II Review**](src/20-midterm-2-review/)
 
+#### **Advanced Concepts**
+
+19. [**Recursion**](src/21-recursion/)
+
 <br>
 
 ### Academic Integrity Code
