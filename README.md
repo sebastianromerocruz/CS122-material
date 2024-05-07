@@ -142,6 +142,7 @@ We will be following the same grading scale as last semester:
 
 21. [**Recursion**](src/21-recursion/)
 22. [**Collections**](src/22-collections/)
+23. [**Final Exam Review**](#src/23-final-review)
 
 <br>
 
