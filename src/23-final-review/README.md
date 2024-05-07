@@ -114,7 +114,7 @@ At the heart of temple rituals lies the act of prayer, a practice shared by many
 
 The **`Prayer`** interface must include...
 
-- A single _public_ method signature, **`conductPrayer()`**, that throws a `VisitationNotAllowedException`. This method represents the act of conducting a prayer.
+- A single _public void_ method signature, **`conductPrayer()`**, that throws a `VisitationNotAllowedException`. This method represents the act of conducting a prayer.
 
 <br>
 
